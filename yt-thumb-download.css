@@ -1,0 +1,129 @@
+ 
+   body{
+    background: linear-gradient(135deg, #ac92e4 0%, #df74c1 100%);
+   }
+    .containert {
+       background: linear-gradient(135deg, #bba6ec 0%, #e8a9d6 100%);
+      padding: 40px 30px;
+      margin: 60px auto 80px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #489a71;
+      margin-bottom: 20px;
+    }
+
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #fbc02d;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #52a97d;
+      box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+    }
+
+    buttont {
+      background: #489a71;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      display: block;
+      font-weight: 600;
+    }
+
+    buttont:hover {
+      background: #00e613;
+    }
+
+    .thumbnail-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .thumbnail-container h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .thumbnail-container img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      margin-bottom: 15px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-bottom: 25px;
+      padding: 10px 20px;
+      background-color: #f57c00;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #e65100;
+    }
+
+    @media (max-width: 500px) {
+      .containert {
+        padding: 30px 20px;
+      }
+      buttont, .download-btn {
+        max-width: 100%;
+      }
+    }
+
+
+    .input-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-wrapper input {
+    padding-right: 60px; /* Space for the clear icon */
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .clear-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+    color: #888;
+    padding-bottom: 18px;
+  }
+
+  .clear-icon:hover {
+    color: #000;
+  }
+ 

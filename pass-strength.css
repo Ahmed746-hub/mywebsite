@@ -1,0 +1,99 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+   background: linear-gradient(135deg, #ac92e4 0%, #df74c1 100%);
+}
+
+.container2 {
+      max-width: 400px;
+      background: linear-gradient(135deg, #bba6ec 0%, #e8a9d6 100%);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 40px auto;
+    }
+
+.container2 h2 {
+  color: #222;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.password-container {
+   display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #eee;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 10px;
+}
+
+.password-container input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  flex: 1;
+  min-width: 0; /* Prevent input from expanding container */
+  outline: none;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.password-container button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: background 0.3s ease;
+  white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.password-container .toggle-btn {
+  background-color: #c5b3ff;
+}
+
+.password-container .copy-btn {
+  background-color: #a8ebc7;
+}
+
+.password-container .toggle-btn:hover {
+  background-color: #dfb7ff;
+}
+
+.password-container .copy-btn:hover {
+  background-color: #90dab1;
+}
+
+.strength {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 480px) {
+  .container2 {
+   width: 90%;
+  }
+}
+  .password-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .password-container button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+
+ 
+
+
+  

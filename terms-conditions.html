@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Read the Terms and Conditions for Online Tools Hub to understand your rights, responsibilities, and usage rules.">
+  <title>Terms and Conditions | Online Tools Hub</title>
+  <link rel="stylesheet" href="terms-style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+     
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <section class="terms-hero">
+    <div class="terms-hero-text">
+      <h1>📃 Terms and Conditions</h1>
+      <p>Understand your responsibilities and our terms of service before using our tools.</p>
+    </div>
+  </section>
+
+  <section class="terms-section">
+    <div class="terms-container">
+      <p><strong>Effective Date:</strong> June 3, 2025</p>
+      <p><strong>Last Updated:</strong> June 3, 2025</p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using Online Tools Hub, you agree to these Terms and Conditions and our Privacy Policy.</p>
+
+      <h2>2. Use of Tools</h2>
+      <p>You agree to use our tools (e.g., TikTok Downloader, QR Generator, Password Tools) for lawful purposes only.</p>
+
+      <h2>3. No User Accounts</h2>
+      <p>We do not require registration. Use of tools is anonymous and free of charge.</p>
+
+      <h2>4. Intellectual Property</h2>
+      <p>All content, branding, and tools on this site are the property of Online Tools Hub and may not be copied or redistributed without permission.</p>
+
+      <h2>5. Disclaimer</h2>
+      <p>Our tools are provided “as is.” We make no warranties regarding availability, accuracy, or fitness for any particular purpose.</p>
+
+      <h2>6. Limitation of Liability</h2>
+      <p>We are not responsible for any loss or damage resulting from your use of the tools.</p>
+
+      <h2>7. Third-Party Links</h2>
+      <p>We may include links to third-party websites. We are not responsible for their content or policies.</p>
+
+      <h2>8. Changes to Terms</h2>
+      <p>We may update these Terms. Continued use of the website after changes means you accept the new terms.</p>
+
+      <h2>9. Governing Law</h2>
+      <p>These terms are governed by and construed in accordance with the laws of your local jurisdiction.</p>
+
+      <h2>10. Contact Us</h2>
+      <p>For questions about these Terms, contact us at: <a href="mailto:support@onlinetoolshub.com">support@onlinetoolshub.com</a></p>
+
+      <div class="summary-box">
+        <h3>✅ Key Points</h3>
+        <ul>
+          <li>No account required</li>
+          <li>Use for legal purposes only</li>
+          <li>We are not liable for misuse</li>
+          <li>You accept updates by continuing use</li>
+        </ul>
+     
+  </section>
+
+</main>
+ <footer>
+  <div class="footer-links">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+  </div>
+  <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      if (nav.classList.contains("nav-visible")) {
+        nav.classList.add("nav-hide");
+        setTimeout(() => {
+          nav.classList.remove("nav-visible", "nav-hide");
+        }, 300);
+      } else {
+        nav.classList.add("nav-visible");
+      }
+    }
+
+    document.addEventListener("click", (e) => {
+      const nav = document.getElementById("nav-links");
+      const menuButton = document.querySelector(".menu-toggle");
+      if (!nav.contains(e.target) && !menuButton.contains(e.target)) {
+        if (nav.classList.contains("nav-visible")) {
+          nav.classList.add("nav-hide");
+          setTimeout(() => {
+            nav.classList.remove("nav-visible", "nav-hide");
+          }, 300);
+        }
+      }
+    });
+
+    const menuButton = document.querySelector(".menu-toggle");
+    menuButton.addEventListener("mouseenter", () => {
+      menuButton.classList.add("animate");
+    });
+    menuButton.addEventListener("animationend", () => {
+      menuButton.classList.remove("animate");
+    });
+
+    const toolButtons = document.querySelectorAll(".tool-btn");
+    toolButtons.forEach(btn => {
+      btn.addEventListener("mouseenter", () => {
+        btn.style.transform = "scale(1.05)";
+        btn.style.transition = "transform 0.3s ease";
+      });
+      btn.addEventListener("mouseleave", () => {
+        btn.style.transform = "scale(1)";
+      });
+    });
+
+    window.addEventListener("load", () => {
+      const mainContent = document.querySelector("main");
+      mainContent.style.opacity = 0;
+      mainContent.style.transition = "opacity 1s ease-in-out";
+      setTimeout(() => {
+        mainContent.style.opacity = 1;
+      }, 100);
+    });
+
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 10) {
+        header.style.boxShadow = "0 4px 10px rgba(0,0,0,0.25)";
+      } else {
+        header.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+      }
+    });
+    const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-visible');
+  });
+
+  // Close nav on outside click (only on mobile)
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+        nav.classList.remove('nav-visible');
+      }
+    }
+  });
+
+  // Optional: animate button when hovered
+  menuToggle.addEventListener('mouseenter', () => {
+    menuToggle.classList.add('animate');
+    setTimeout(() => menuToggle.classList.remove('animate'), 400);
+  });
+  </script>
+
+</body>
+</html>

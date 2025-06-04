@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="yt-thumb-download.css" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <div class="containert">
+    <h2>🎥 YouTube Thumbnail Downloader</h2>
+    <p>Enter a YouTube video link below to get its thumbnail:</p>
+
+    <div class="input-wrapper">
+      <input type="text" id="videoUrl" placeholder="Paste YouTube Video URL..." oninput="toggleClearIcon()" />
+      <span id="clearIcon" class="clear-icon" onclick="clearInput()">&#10006;</span>
+    </div>
+
+    <buttont onclick="getThumbnail()">Get Thumbnail</buttont>
+
+    <div id="thumbnailContainer" class="thumbnail-container"></div>
+  </div>
+</main>
+
+<section style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #8ee8e0 0%, #e090b1 100%); margin-bottom: 40px;">
+  <div style="max-width: 960px; margin: 0 auto;">
+    <h2 style="color: #101070;">Download YouTube Thumbnails Instantly</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75;">High-Quality Images</h3>
+        <p>Grab thumbnails in HD resolution straight from any YouTube video link—perfect for reuse or design.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75;">No Sign-Up Needed</h3>
+        <p>Use the tool instantly without registering. Just paste the link and download the thumbnail in seconds.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75;">Works on Any Device</h3>
+        <p>Fully online and compatible with mobile, tablet, or desktop browsers—no app required.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- Advantages Grid -->
+<section style="padding: 50px 20px; background: #ffffff;">
+  <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+    <h2 style="color: #222288;">Why Use Our YouTube Thumbnail Downloader?</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="link-icon.png" alt="Link Icon" width="50" /><br>
+        <p>Paste any YouTube video link and instantly fetch its thumbnail.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="tag-icon.png" alt="Free Icon" width="50" /><br>
+        <p>Completely free to use — no subscriptions or hidden fees.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="customize.png" alt="Quality Icon" width="50" /><br>
+        <p>Download thumbnails in various resolutions including HD.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="speed-icon.jpg" alt="Speed Icon" width="50" /><br>
+        <p>Fast, lightweight, and optimized for quick access and downloads.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="security-icon.jpg" alt="Private Icon" width="50" /><br>
+        <p>No data is saved — safe and secure to use anytime.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="device-icon.png" alt="Device Icon" width="50" /><br>
+        <p>Works seamlessly on all browsers and devices — mobile, tablet, or desktop.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- FAQ Section -->
+<section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">Is the YouTube Thumbnail Downloader free to use?</button>
+      <div class="faq-answer">
+        <p>Yes, our tool is 100% free with no hidden charges or subscription requirements.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need to install any software or browser extension?</button>
+      <div class="faq-answer">
+        <p>No installation is needed. Our thumbnail downloader works entirely in your browser.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I download a YouTube video thumbnail?</button>
+      <div class="faq-answer">
+        <p>Just copy the URL of the YouTube video, paste it into the tool, and click "Download" to get the thumbnail.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What thumbnail quality can I download?</button>
+      <div class="faq-answer">
+        <p>You can download thumbnails in different resolutions including standard, HQ, and max resolution (HD) depending on the video.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I use the downloaded thumbnails for my own content?</button>
+      <div class="faq-answer">
+        <p>Thumbnails are owned by the original content creators. Make sure you have the right to use them, especially for commercial purposes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is this tool safe to use?</button>
+      <div class="faq-answer">
+        <p>Yes, it's safe and private. No data is stored or shared, and everything happens in your browser.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Does it work on mobile devices?</button>
+      <div class="faq-answer">
+        <p>Absolutely. The tool is mobile-friendly and works on all modern smartphones and tablets.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I download thumbnails from private or age-restricted videos?</button>
+      <div class="faq-answer">
+        <p>No, the tool only works with public YouTube videos. Private or restricted content isn't supported.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is there a limit to how many thumbnails I can download?</button>
+      <div class="faq-answer">
+        <p>No limits! Download as many thumbnails as you want—completely free and unlimited.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What if the thumbnail doesn't load?</button>
+      <div class="faq-answer">
+        <p>Double-check the video URL and ensure it's from a public YouTube video. If the issue persists, try refreshing the page or using a different browser.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+  
+
+  <footer>
+  <div class="footer-links">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+  </div>
+  <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+</footer>
+
+  <script src="yt-thumb-download.js"></script>
+
+</body>
+</html>

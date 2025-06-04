@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="password generator, strong password generator, free password tool, secure passwords, online password maker, random password generator, create strong passwords, generate secure password">
+  <meta name="description" content="Generate strong and secure passwords instantly with our free online password generator tool. Perfect for securing your online accounts.">
+ <title>Online Tools Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pass-gen.css" />
+</head>
+<body>
+  <header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Section -->
+   <main>
+  <div class="container1">
+    <h2>🔑 Password Generator</h2>
+    
+    <label>Password Length:</label>
+    <input type="number" id="length" value="12" min="6" max="30">
+    
+    <div class="options">
+      <label><input type="checkbox" id="uppercase" checked> Uppercase Letters (A-Z)</label>
+      <label><input type="checkbox" id="lowercase" checked> Lowercase Letters (a-z)</label>
+      <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+      <label><input type="checkbox" id="symbols" checked> Symbols (!@#$%^&*)</label>
+    </div>
+
+    <button class="btn generate-btn" onclick="generatePassword()">Generate Password</button>
+
+    <div class="password-box">
+      <input type="text" id="password" readonly>
+      <button onclick="toggleVisibility()">👁️</button>
+    </div>
+
+    <button class="btn copy-btn" onclick="copyPassword()">Copy</button>
+
+   </main>
+
+   <section style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #8ee8e0 0%, #e090b1 100%); margin-bottom: 40px;">
+  <div style="max-width: 960px; margin: 0 auto;">
+    <h2 style="color: #101070; margin-bottom: 20px;">Generate Strong Passwords Instantly</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 0;">
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75; margin-bottom: 10px;">Customizable Options</h3>
+        <p style="margin-top: 0;">Create passwords with your preferred length, symbols, numbers, and uppercase letters.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75; margin-bottom: 10px;">Safe & Private</h3>
+        <p style="margin-top: 0;">Your generated passwords stay on your device — we never store or share them.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75; margin-bottom: 10px;">Fast & Easy</h3>
+        <p style="margin-top: 0;">Get complex, secure passwords with just one click—no hassle involved.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    <!-- Advantages Grid -->
+  <section style="padding: 50px 20px; background: #ffffff;">
+  <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+    <h2 style="color: #222288;">Why Use Our Password Generator?</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="security-icon.jpg" alt="Secure Icon" width="50" /><br>
+        <p>Generate strong, secure passwords that protect your online accounts.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="tag-icon.png" alt="Unlimited Icon" width="50" /><br>
+        <p>Create unlimited passwords — no  usage limits.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="customize.png" alt="Custom Icon" width="50" /><br>
+        <p>Customize your password with desired length and character types.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="speed-icon.jpg" alt="Fast Icon" width="50" /><br>
+        <p>Instant password generation with just one click — super fast!</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="mp3-icon.png" alt="No Save Icon" width="50" /><br>
+        <p>Your data and passwords are never stored or shared. 100% private.</p>
+      </div>
+
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="device-icon.png" alt="Device Icon" width="50" /><br>
+        <p>Works on all devices and browsers — desktop, mobile, tablet.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <!-- FAQ Item -->
+    <div class="faq-item">
+      <button class="faq-question">Is this password generator free to use?</button>
+      <div class="faq-answer">
+        <p>Yes! Our password generator is completely free and accessible on all modern browsers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need to install any software or extension?</button>
+      <div class="faq-answer">
+        <p>No installation is required. Just open the website and generate your secure password instantly.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I customize the length and complexity of the password?</button>
+      <div class="faq-answer">
+        <p>Absolutely! You can choose the password length and include options like uppercase, numbers, and special characters.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are the generated passwords secure?</button>
+      <div class="faq-answer">
+        <p>Yes, our tool generates strong and random passwords that are safe to use for your online accounts.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I generate multiple passwords at once?</button>
+      <div class="faq-answer">
+        <p>Currently, the tool generates one password at a time, but you can quickly regenerate as many as you need.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is my data saved or tracked?</button>
+      <div class="faq-answer">
+        <p>No, we do not save or track any passwords you generate. Everything happens locally in your browser.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I use this tool on mobile devices?</button>
+      <div class="faq-answer">
+        <p>Yes, our password generator works smoothly on smartphones and tablets across all major platforms.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I copy the generated password?</button>
+      <div class="faq-answer">
+        <p>Simply click the "Copy" button next to the generated password to copy it to your clipboard.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I save generated passwords for later?</button>
+      <div class="faq-answer">
+        <p>For security reasons, we don’t save passwords. You can copy and save them in your preferred password manager.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <footer>
+  <div class="footer-links">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+  </div>
+  <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+</footer>
+  <script src="pass-gen.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,111 @@
+    body{
+    background: linear-gradient(135deg, #ac92e4 0%, #df74c1 100%);
+    }
+    .container1 {
+      max-width: 400px;
+      background: linear-gradient(135deg, #bba6ec 0%, #e8a9d6 100%);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 40px auto;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .options {
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    .options label {
+      display: block;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    input[type="number"], input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .password-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #eee;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .password-box input {
+      border: none;
+      background: transparent;
+      font-size: 18px;
+      flex: 1;
+    }
+
+    .password-box button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .generate-btn {
+      background: #4f5758;
+      color: white;
+    }
+
+    .copy-btn {
+      background: #70be87;
+      color: white;
+    }
+
+    .generate-btn:hover {
+      background: #df66bf;
+    }
+
+    .copy-btn:hover {
+      background: #77d9e8;
+    }
+
+    @media (max-width: 480px) {
+      .container1 {
+        width: 90%;
+      }
+    }
+
+
+
+    /* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, #bba6ec 0%, #e8a9d6 100%);
+}
+
+

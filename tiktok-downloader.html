@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Download TikTok videos online for free without watermark. Fast and secure TikTok video downloader that works on any device.">
+  <meta name="keywords" content="TikTok video downloader, download TikTok videos, no watermark TikTok downloader, free TikTok downloader, online TikTok video save">
+
+  <title>TikTok Video Downloader - Online Tools Hub</title>
+  <link rel="stylesheet" href="style-tiktok.css" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Downloader -->
+  <main>
+    <section class="downloader-section">
+      <div class="downloader-container">
+        <h2>📥 TikTok Video Downloader</h2>
+        <p>Paste a TikTok video URL below to download it without a watermark:</p>
+
+        <div class="input-wrapper">
+          <input type="text" id="tiktokUrl" placeholder="Paste TikTok Video URL..." oninput="toggleClearButton()" />
+          <span class="clear-btn" onclick="clearInput()">&#10006;</span>
+        </div>
+
+        <button class="tool-btn" onclick="downloadTikTokVideo()">Download Video</button>
+
+        <div id="downloadResult"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Feature Highlights -->
+  <section style="text-align:center; padding: 40px 20px; background: linear-gradient(135deg, #8ee8e0 0%, #e090b1 100%);">
+    <div style="max-width: 960px; margin: 0 auto;">
+      <h2 style="color:#101070;">Download TikTok videos Without Watermark</h2>
+      <div style="display:flex; flex-wrap:wrap; justify-content: space-around; margin-top: 30px;">
+        <div style="flex:1 1 250px; margin: 15px;">
+          <h3 style="color:#1e1e75;">Unlimited</h3>
+          <p>Save TikTok videos as much as you need - without any limits.</p>
+        </div>
+        <div style="flex:1 1 250px; margin: 15px;">
+          <h3 style="color:#1e1e75;">No Watermark!</h3>
+          <p>Download TikTok videos without watermark or remove a TT logo.</p>
+        </div>
+        <div style="flex:1 1 250px; margin: 15px;">
+          <h3 style="color:#1e1e75;">MP4</h3>
+          <p>Save files in HD quality,  TikTok video (mp4).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section style="padding: 50px 20px; background: #9fe3dd;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2 style="color: #2200cc;">How to Download TikTok Without Watermark?</h2>
+      <p style="margin-top: 16px; color: #ff00ff; font-style: italic;">Here's how it’s done:</p>
+      <div style="margin-top: 30px;background: linear-gradient(135deg, #a18cd1 0%, #df74c1 100%); color: #121111; padding: 30px; border-radius: 20px;">
+        <p><strong>1. Find a TT</strong><br>Play the video you’d like to save to your mobile device using the TikTok app.</p>
+        <p><strong>2. Copy the Link</strong><br>Tap "Share" → then tap "Copy link".</p>
+        <p><strong>3. Save TikTok</strong><br>Paste the link above and click "Download Video".</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages Grid -->
+  <section style="padding: 50px 20px; background: #ffffff;">
+    <div style="max-width: 960px; margin: 0 auto; text-align:center;">
+      <h2 style="color: #222288;">Why Use Our Downloader?</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+        <div style="flex: 1 1 250px; margin: 20px;">
+          <img src="link-icon.png" alt="Link Icon" width="50" /><br>
+          <p>TikTok download is the perfect solution for post-editing and publishing!</p>
+        </div>
+        <div style="flex: 1 1 250px; margin: 20px;">
+          <img src="tag-icon.png" alt="Tag Icon" width="50" /><br>
+          <p>Download TikTok videos for free and in unlimited amount.</p>
+        </div>
+        <div style="flex: 1 1 250px; margin: 20px;">
+          <img src="user-icon.png" alt="User Icon" width="50" /><br>
+          <p>No username required. Just paste the link and go!</p>
+        </div>
+        <div style="flex: 1 1 250px; margin: 20px;">
+          <img src="speed-icon.jpg" alt="Speed Icon" width="50" /><br>
+          <p>High-speed TikTok video download in HD.</p>
+        </div>
+        <div style="flex: 1 1 250px; margin: 20px;">
+          <img src="mp3-icon.png" alt="MP3 Icon" width="50" /><br>
+          <p>TikTok video download in mp4 or mp3 format.</p>
+        </div>
+        <div style="flex: 1 1 250px; margin: 20px;">
+          <img src="device-icon.png" alt="Device Icon" width="50" /><br>
+          <p>Works on any browser or operating system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <!-- FAQ Item -->
+    <div class="faq-item">
+      <button class="faq-question">Is the TikTok downloader free to use?</button>
+      <div class="faq-answer">
+        <p>Yes, our TikTok download service is 100% free. It works seamlessly on all modern browsers like Chrome, Firefox, Safari, and Edge.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need to install an extension?</button>
+      <div class="faq-answer">
+        <p>No installation needed! Just paste your TikTok video link, and our tool removes the watermark and downloads it automatically.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Where are downloaded TikTok videos saved?</button>
+      <div class="faq-answer">
+        <p>Videos are saved in your browser’s default download folder. You can change this location in your browser settings.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need a TikTok account to download videos?</button>
+      <div class="faq-answer">
+        <p>No account is required. Simply copy the video link and hit “Download” — that’s it!</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I download videos from private TikTok accounts?</button>
+      <div class="faq-answer">
+        <p>No. Only public TikTok videos can be downloaded. Private content is not accessible due to privacy policies.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I get the link to a TikTok video?</button>
+      <div class="faq-answer">
+        <p>In the TikTok app, open the video → tap "Share" → choose "Copy Link". Paste the link into our tool to start downloading.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I save TikTok videos in MP4 format on iPhone?</button>
+      <div class="faq-answer">
+        <p>Yes! Make sure your iOS is up to date, then use Safari to download MP4 videos from our website.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is this tool compatible with Android?</button>
+      <div class="faq-answer">
+        <p>Absolutely. The downloader works smoothly on all Android devices using any major browser.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I download TikTok videos in HD without watermark?</button>
+      <div class="faq-answer">
+        <p>Yes, our tool provides high-definition downloads without watermarks, if available from the original source.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Does the TikTok downloader support MP4 format?</button>
+      <div class="faq-answer">
+        <p>Yes, all TikTok videos are downloaded in MP4 format for maximum compatibility and quality.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+ <footer>
+  <div class="footer-links">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+  </div>
+  <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="tiktok.js"></script>
+</body>
+</html>

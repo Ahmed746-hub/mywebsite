@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Generate custom QR codes instantly with our free online QR code generator. Create QR codes for URLs, text, emails, WiFi, and more.">
+  <meta name="keywords" content="QR code generator, free QR code maker, create QR code online, custom QR code, generate QR codes for URL, text, WiFi, contact">
+
+  <title>TikTok Video Downloader - Online Tools Hub</title>
+  <link rel="stylesheet" href="qr-gen.css" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Downloader -->
+  <main>
+    <section class="downloader-section">
+  <!-- QR Code Generator Section with updated classes -->
+  <div class="downloader-container">
+    <h2>🔲 QR Code Generator</h2>
+    <p>Enter text or link below to generate your QR code:</p>
+
+    <div class="input-wrapper">
+      <input type="text" id="qrText" placeholder="Enter text or link">
+      <span class="clear-btn" onclick="document.getElementById('qrText').value = '';">&#10006;</span>
+    </div>
+
+    <button class="tool-btn" onclick="generateQR()">Generate</button>
+    <div id="qrcode"></div>
+  </div>
+
+  
+</section>
+
+  </main>
+
+  <!-- Feature Highlights -->
+ <section style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #8ee8e0 0%, #e090b1 100%);">
+  <div style="max-width: 960px; margin: 0 auto;">
+    <h2 style="color: #101070;">Generate QR Codes Instantly and Easily</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75;">Unlimited Generation</h3>
+        <p>Create as many QR codes as you want — no restrictions, no fees.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75;">No Login Required</h3>
+        <p>Use the tool instantly — no registration, no personal info needed.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 15px;">
+        <h3 style="color: #1e1e75;">Multiple Formats</h3>
+        <p>Download QR codes in PNG, ready for print or digital use.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Advantages Grid -->
+  <section style="padding: 50px 20px; background: #ffffff;">
+  <div style="max-width: 960px; margin: 0 auto; text-align: center;">
+    <h2 style="color: #222288;">Why Use Our QR Code Generator?</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
+      
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="link-icon.png" alt="Link Icon" width="50" /><br>
+        <p>Create QR codes for URLs, text, emails, phone numbers and more!</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="tag-icon.png" alt="Tag Icon" width="50" /><br>
+        <p>Generate unlimited QR codes completely free of charge.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="user-icon.png" alt="User Icon" width="50" /><br>
+        <p>No sign-up or account needed – just enter your data and generate.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="speed-icon.jpg" alt="Speed Icon" width="50" /><br>
+        <p>Instant QR code creation with fast preview and download.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="mp3-icon.png" alt="Format Icon" width="50" /><br>
+        <p>Download your QR code in PNG format for any use.</p>
+      </div>
+      
+      <div style="flex: 1 1 250px; margin: 20px;">
+        <img src="device-icon.png" alt="Device Icon" width="50" /><br>
+        <p>Works on any browser, mobile device, or operating system.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+
+    <!-- FAQ Item -->
+    <div class="faq-item">
+      <button class="faq-question">Is the QR Code Generator free to use?</button>
+      <div class="faq-answer">
+        <p>Yes! Our QR Code Generator is 100% free. Create and download as many codes as you like, no signup required.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need to install any software or extension?</button>
+      <div class="faq-answer">
+        <p>No installation needed. This is a browser-based tool that works directly from our website.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What types of data can I convert into a QR code?</button>
+      <div class="faq-answer">
+        <p>You can generate QR codes for URLs, plain text, emails, phone numbers, Wi-Fi credentials, and more.</p>
+      </div>
+    </div>
+
+
+    <div class="faq-item">
+      <button class="faq-question">Can I download the QR code?</button>
+      <div class="faq-answer">
+        <p>Absolutely. You can download your QR code in PNG, ready for print or digital use.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Will my generated QR code expire?</button>
+      <div class="faq-answer">
+        <p>No, static QR codes generated through our tool do not expire and can be used indefinitely.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I track who scans my QR code?</button>
+      <div class="faq-answer">
+        <p>Tracking is not available with static QR codes. For scan analytics, you would need dynamic QR services.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Does it work on mobile devices?</button>
+      <div class="faq-answer">
+        <p>Yes! Our QR Code Generator is fully responsive and works on Android, iPhone, tablets, and desktops.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are there any limits on QR code generation?</button>
+      <div class="faq-answer">
+        <p>No limits at all. You can create and download as many QR codes as you want without restrictions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is it safe to use this QR generator?</button>
+      <div class="faq-answer">
+        <p>Yes. We don’t store any of your input data. Everything is processed securely in your browser.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+  <!-- Footer -->
+ <footer>
+  <div class="footer-links">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+  </div>
+  <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+</footer>
+
+  <!-- JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+
+  <script src="qr-gen.js"></script>
+</body>
+</html>

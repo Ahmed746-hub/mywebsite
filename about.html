@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Learn more about Online Tools Hub - Our mission, values, and how we help users with smart online tools." />
+  <title>About Us | Online Tools Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    /* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f8fb;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.privacy-hero {
+  background: #9be1c1;
+  padding: 120px 20px;
+  text-align: center;
+  color: #201f1f;
+}
+
+.privacy-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.privacy-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Content Section */
+.privacy-section {
+  padding: 50px 20px;
+   background: linear-gradient(135deg, #74beed, #c971da);
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+ background: linear-gradient(135deg, #71e7e9, #aae7df);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.privacy-container h2 {
+  color: #293775;
+  margin: 30px 0 10px;
+  font-size: 1.4rem;
+}
+
+.privacy-container h3 {
+  margin-top: 40px;
+  color: #1a1a5e;
+}
+
+.privacy-container p,
+.privacy-container ul {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.privacy-container ul {
+  padding-left: 20px;
+}
+
+.privacy-container li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Summary Box */
+.summary-box {
+  background: #ededee;
+  border-left: 4px solid #4467aa;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 6px;
+}
+
+.summary-box h3 {
+  margin-bottom: 10px;
+  color: #1f3367;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-hero h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-container {
+    padding: 20px;
+  }
+
+  .privacy-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .privacy-container p,
+  .privacy-container ul {
+    font-size: 0.95rem;
+  }
+}
+
+</style>
+
+<body>
+  <header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="privacy-hero">
+  <h1>About Online Tools Hub</h1>
+  <p>Empowering users with simple, fast, and free tools — no downloads, no hassle.</p>
+</section>
+
+<!-- Main About Content -->
+<section class="privacy-section">
+  <div class="privacy-container">
+
+    <h2>🌟 Who We Are</h2>
+    <p><strong>Online Tools Hub</strong> was created to offer a powerful collection of free, easy-to-use web tools for everyday tasks — from downloading TikTok videos to generating secure passwords and creating QR codes. We believe simplicity and speed should never be compromised.</p>
+
+    <h2>🎯 Our Mission</h2>
+    <p>Our mission is to simplify your digital life. Whether you’re a content creator, a student, or a casual web user, our tools are here to help — instantly, securely, and without requiring registration or payment.</p>
+
+    <h2>🚀 What Makes Us Different?</h2>
+    <ul>
+      <li>✅ <strong>Completely Free:</strong> No hidden fees or locked features.</li>
+      <li>✅ <strong>No Login Required:</strong> Use any tool instantly — privacy first.</li>
+      <li>✅ <strong>Fast & Lightweight:</strong> Optimized for performance across all devices.</li>
+      <li>✅ <strong>Safe & Secure:</strong> We never store or share your data.</li>
+      <li>✅ <strong>Mobile Friendly:</strong> Responsive design for easy access on phones & tablets.</li>
+    </ul>
+
+    <h2>📈 Our Tools Are Growing</h2>
+    <p>We’re constantly adding new utilities based on real user feedback. Whether you need a word counter, a password strength checker, or something more advanced — we’re listening, building, and improving daily.</p>
+
+    <h3>💬 Got Suggestions?</h3>
+    <p>We love feedback! <a href="contact.html">Reach out</a> if you have a new tool idea or spot a bug — we’re a small team, but we move fast.</p>
+
+    <div class="summary-box">
+      <h3>🌐 Join Thousands of Users</h3>
+      <p>Trusted by users worldwide, Online Tools Hub is your go-to source for hassle-free digital tools — available 24/7, wherever you are.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+  </div>
+  <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+</footer>
+
+<script>function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      if (nav.classList.contains("nav-visible")) {
+        nav.classList.add("nav-hide");
+        setTimeout(() => {
+          nav.classList.remove("nav-visible", "nav-hide");
+        }, 300);
+      } else {
+        nav.classList.add("nav-visible");
+      }
+    }
+
+    document.addEventListener("click", (e) => {
+      const nav = document.getElementById("nav-links");
+      const menuButton = document.querySelector(".menu-toggle");
+      if (!nav.contains(e.target) && !menuButton.contains(e.target)) {
+        if (nav.classList.contains("nav-visible")) {
+          nav.classList.add("nav-hide");
+          setTimeout(() => {
+            nav.classList.remove("nav-visible", "nav-hide");
+          }, 300);
+        }
+      }
+    });
+
+    const menuButton = document.querySelector(".menu-toggle");
+    menuButton.addEventListener("mouseenter", () => {
+      menuButton.classList.add("animate");
+    });
+    menuButton.addEventListener("animationend", () => {
+      menuButton.classList.remove("animate");
+    });
+
+    const toolButtons = document.querySelectorAll(".tool-btn");
+    toolButtons.forEach(btn => {
+      btn.addEventListener("mouseenter", () => {
+        btn.style.transform = "scale(1.05)";
+        btn.style.transition = "transform 0.3s ease";
+      });
+      btn.addEventListener("mouseleave", () => {
+        btn.style.transform = "scale(1)";
+      });
+    });
+
+    window.addEventListener("load", () => {
+      const mainContent = document.querySelector("main");
+      mainContent.style.opacity = 0;
+      mainContent.style.transition = "opacity 1s ease-in-out";
+      setTimeout(() => {
+        mainContent.style.opacity = 1;
+      }, 100);
+    });
+
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 10) {
+        header.style.boxShadow = "0 4px 10px rgba(0,0,0,0.25)";
+      } else {
+        header.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+      }
+    });
+    const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-visible');
+  });
+
+  // Close nav on outside click (only on mobile)
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+        nav.classList.remove('nav-visible');
+      }
+    }
+  });
+
+  // Optional: animate button when hovered
+  menuToggle.addEventListener('mouseenter', () => {
+    menuToggle.classList.add('animate');
+    setTimeout(() => menuToggle.classList.remove('animate'), 400);
+  });
+  
+
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+
+        // Toggle active class
+        question.classList.toggle('active');
+
+        // Toggle answer visibility
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+
+        // Close other answers
+        questions.forEach(q => {
+          if (q !== question) {
+            q.classList.remove('active');
+            q.nextElementSibling.style.maxHeight = null;
+          }
+        });
+      });
+    });
+  });
+
+
+
+  </script>
+</body>
+</html>

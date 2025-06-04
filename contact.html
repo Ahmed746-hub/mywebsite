@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Get in touch with the team at Online Tools Hub." />
+  <title>Contact Us | Online Tools Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<style>
+     /* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f8fb;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.privacy-hero {
+  background: #9be1c1;
+  padding: 120px 20px;
+  text-align: center;
+  color: #201f1f;
+}
+
+.privacy-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.privacy-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Content Section */
+.privacy-section {
+  padding: 50px 20px;
+   background: linear-gradient(135deg, #74beed, #c971da);
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+ background: linear-gradient(135deg, #71e7e9, #aae7df);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.privacy-container h2 {
+  color: #293775;
+  margin: 30px 0 10px;
+  font-size: 1.4rem;
+}
+
+.privacy-container h3 {
+  margin-top: 40px;
+  color: #1a1a5e;
+}
+
+.privacy-container p,
+.privacy-container ul {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.privacy-container ul {
+  padding-left: 20px;
+}
+
+.privacy-container li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Summary Box */
+.summary-box {
+  background: #ededee;
+  border-left: 4px solid #4467aa;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 6px;
+}
+
+.summary-box h3 {
+  margin-bottom: 10px;
+  color: #1f3367;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .privacy-hero h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-container {
+    padding: 20px;
+  }
+
+  .privacy-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .privacy-container p,
+  .privacy-container ul {
+    font-size: 0.95rem;
+  }
+}
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #293775;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.3s ease;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #74beed;
+    outline: none;
+  }
+
+  .contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #4467aa;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background: #2f4d85;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="containerh">
+      <div class="left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <h1 class="site-title">Online Tools Hub</h1>
+      </div>
+      <nav>
+        <ul id="nav-links" class="nav-default">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="privacy-hero">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out with any questions, feedback, or ideas.</p>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="privacy-section">
+    <div class="privacy-container">
+
+      <h2>📨 Send Us a Message</h2>
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email" />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="Subject" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+      <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+    </div>
+    <p>&copy; 2025 Online Tools Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      if (nav.classList.contains("nav-visible")) {
+        nav.classList.add("nav-hide");
+        setTimeout(() => {
+          nav.classList.remove("nav-visible", "nav-hide");
+        }, 300);
+      } else {
+        nav.classList.add("nav-visible");
+      }
+    }
+
+    document.addEventListener("click", (e) => {
+      const nav = document.getElementById("nav-links");
+      const menuButton = document.querySelector(".menu-toggle");
+      if (!nav.contains(e.target) && !menuButton.contains(e.target)) {
+        if (nav.classList.contains("nav-visible")) {
+          nav.classList.add("nav-hide");
+          setTimeout(() => {
+            nav.classList.remove("nav-visible", "nav-hide");
+          }, 300);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
